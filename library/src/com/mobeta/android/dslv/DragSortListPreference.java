@@ -119,6 +119,9 @@ public class DragSortListPreference extends ListPreference {
 		if (input == null) {
 			return null;
 		}
+		if (input.equals("")) {
+			return new CharSequence[0];
+		}
 		return input.split(separator);
 	}
 
